@@ -1,0 +1,102 @@
+footer {
+    color: rgba(46, 58, 89, 1);
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 112px;
+    gap: 104px;
+    flex-wrap: wrap;
+    .fsposter {
+      height: 240px;
+      div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        p {
+          font-weight: 600;
+          font-size: 24px;
+        }
+      }
+      .descript {
+        margin-top: 38px;
+        width: 200px;
+      }
+    }
+    .company,
+    .product {
+      height: 240px;
+      p {
+        font-size: 20px;
+        margin-bottom: 24px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        list-style: none;
+        li {
+          transition: 0.5s all;
+          &:hover {
+            transform: scale(1.2);
+            a{
+              color: rgba(255, 61, 113, 1);
+            }
+          }
+          a {
+            color: rgba(46, 58, 89, 1);
+          }
+        }
+      }
+    }
+    .contact {
+      nav{
+          transition: 0.5s all;
+          &:hover{
+              transform: scale(1.1);
+              color: rgba(255, 61, 113, 1);
+            }
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 24px;
+      }
+      ul {
+        display: flex;
+        margin-top: 48px;
+        gap: 24px;
+        list-style: none;
+        li {
+          i {
+            width: 25px;
+            height: 25px;
+            transform: scale(1.5);
+            transition: 0.5s all;
+            color: rgba(46, 58, 89, 1);
+            &:hover {
+              transform: scale(2);
+              color: rgba(255, 61, 113, 1);
+            }
+          }
+        }
+      }
+    }
+    #reserved {
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      justify-content: space-between;
+      .terms {
+        display: flex;
+        gap: 24px;
+        nav{
+            a{
+                transition: 0.5s all;
+                color: rgba(46, 58, 89, 1);
+                &:hover{
+                    color: rgba(255, 61, 113, 1);
+                }
+            }
+        }
+      }
+    }
+  }
